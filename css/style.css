@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1200px;
+  margin: auto;
+  display: block;
+  padding: 50px 50px;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  margin-bottom: 0;
+}
+
+/* BANNER */
+
+#banner {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 0 !important;
+}
+.center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 30%;
+  color: #f7f7f7;
+}
+
+/*  NAVBAR */
+#nav-bar {
+  text-align: center;
+}
+
+nav > .item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > *:hover {
+  background-color: aquamarine;
+}
+.nav-item {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* THÔNG TIN CÁ NHÂN */
+#about > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+#target h1,
+#personal-info h1 {
+  padding-bottom: 20px;
+}
+
+#personal-info li {
+  padding-bottom: 5px;
+}
+.icon {
+  color: #4abbe5;
+  padding-top: 20px;
+}
+/* ẩn thông tin */
+#job-info .section-content {
+  display: none;
+}
+/* ẩn nút view more và view less */
+.view-more,
+.view-less {
+  display: none;
+}
+/* THÔNG TIN NGHỀ NGHIỆP */
+/* Ẩn thông tin cá nhân */
+#personal-info .section-content {
+  display: none;
+}
+
+/* email lỗi */
+#error-email {
+  color: red;
+  font-weight: bold;
+}
+
+/* Kinh nghiệm, học vấn và nghề nghiệp */
+
+.section1,
+.section2,
+.section3 {
+  position: relative;
+}
+
+/* Chỉnh sửa tiêu đề */
+.section-title {
+  color: #727272;
+  width: 100%;
+  padding-bottom: 30px;
+}
+/* Tạo dấu chấm xanh */
+.timeline::after {
+  content: "\2022";
+  display: block;
+  color: #1c9ddb;
+  position: absolute;
+  font-size: 1.5em;
+  top: -10px;
+  left: -20px;
+}
+/* Học vấn */
+.hobby-icon {
+  display: inline-block;
+  color: #59dbb5;
+  padding-left: 10px;
+}
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #59dbb5 1px solid;
+  margin: 0 auto;
+}
+/* Tạo các thanh kinh nghiệm */
+.fill {
+  background: #1c9ddb;
+  width: 45px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.unfill {
+  background: #b6b8ba;
+  width: 45px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* Chứng chỉ */
+.cert-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  row-gap: 40px;
+}
+.cert-info {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.cert-pic {
+  width: 100%;
+  height: 100px;
+}
+
+/* Tạo vạch phân biệt layout */
+.cert-info:first-child,
+.cert-info:nth-child(2) {
+  border-bottom: 1px solid #d6c08d;
+}
+.cert-info:first-child {
+  padding-right: 20px;
+}
+.cert-info:nth-child(2) {
+  border-left: 1px solid #d6c08d;
+  padding-left: 30px;
+}
+.cert-name {
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.description {
+  color: #6f6f6f;
+}
+/* Dự án */
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  column-gap: 30px;
+  width: 100%;
+}
+.project-img {
+  height: 200px;
+  width: 100%;
+}
+.project-name {
+  border: 1px solid #c6c0c0ea;
+  padding-left: 10px;
+  height: 60px;
+  vertical-align: middle;
+}
+.position {
+  border: 1px solid #c6c0c0ea;
+  display: flex;
+  gap: 10px;
+  padding-left: 5px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+td {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border: 1px solid #c6c0c0ea;
+  padding-left: 5px;
+}
+.year {
+  border: 1px solid #4abbe5;
+  border-radius: 25%;
+  height: fit-content;
+  color: #fff;
+  background-color: #4abbe5;
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0px !important;
+}
+
+/* Liên hệ */
+.contact {
+  list-style: none;
+  text-align: center;
+}
+.contact-list {
+  display: inline-block;
+  padding-left: 40px;
+}
+.contact-link {
+  text-decoration: none;
+  color: #6f6f6f;
+}
+/* Nâng cao */
+.avt {
+  width: 20px;
+  height: 20px;
+  transform: scale(7);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}

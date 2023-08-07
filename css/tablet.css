@@ -1,0 +1,32 @@
+@media (max-width: 767.98px) {
+  /* ẩn ảnh ở navbar */
+  .hidden {
+    display: none !important;
+  }
+  .info {
+    list-style-type: none;
+  }
+
+  /* chứng chỉ */
+  .cert-info {
+    flex-direction: column;
+  }
+  .cert-pic {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /*  DỰ án */
+  /* Chung */
+  p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  h2,
+  .section-title {
+    font-size: 21px;
+  }
+}
